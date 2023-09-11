@@ -1,0 +1,217 @@
+.hero__list{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include list-style;
+}
+
+.hero__item:nth-child(2n+1){
+    max-width: 300px;
+    width: 100%;
+    margin-right: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url(/images/hero\ leftbg.png);
+    background-color: #54A6FF;
+}
+
+.hero__item:nth-child(2n){
+    max-width: 280px;
+    width: 100%;
+    margin-right: 20px;
+    padding: 16px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-size: contain;
+    background-image: url(/images/herorightbg.png);
+    background-color: #3563E9;
+}
+
+.hero__title{
+    margin: 0;
+    padding-bottom: 12px;
+    color: #fff;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    letter-spacing: -0.32px;
+}
+.hero__text{
+    margin: 0;
+    padding-bottom: 16px;
+    color: #fff;
+    font-family: Plus Jakarta Sans;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 160%; 
+}
+
+.hero__link{
+    @include link-style;
+    margin-bottom: 60px;
+    
+}
+
+.hero__aboutbox{
+    margin-bottom: 28px;
+    padding: 16px 16px 120px;
+    border-radius: 10px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-color: #3563E9;
+    background-repeat: no-repeat;
+    background-image: url(/images/herorightbg.png);
+    content: "";
+}
+
+.hero__imgbox{
+    display: flex;
+    gap: 18px;
+}
+
+.hero__image:hover{
+    border-radius: 10px;
+    border: 3px solid #3563E9;
+}
+
+.wrapper{
+    display: flex;
+}
+.about__toptext{
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+.about__toptext::before{
+    display: inline-block;
+    width: 76px;
+    height: 12px;
+    background-repeat: no-repeat;
+    background-image: url(/images/star.svg);
+    content: "";
+}
+.about__centertext{
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: -0.24px;
+}
+
+.about_topbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__bottombox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about__bottomtext{
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+.about__boldtext{
+    color: #1A202C;
+    text-align: right;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.review__wrapper {
+    padding: 16px;
+}
+.review__title {
+    color: #1A202C;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 150%; 
+    letter-spacing: -0.4px;
+}
+
+.review__wrapper-lr{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.review__wrapper-lr::before{
+    display: inline-block;
+    width: 44px;
+    height: 44px;
+    background-repeat: no-repeat;
+    background-image: url(/./images/Image.png);
+    content: "";
+}
+.review__wrapper-right{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.review__desc{
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.review__desc-text{
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 200%;
+    letter-spacing: -0.24px;
+}
+
+.review__star{
+    display: inline-block;
+    width: 76px;
+    height: 12px;
+    background-image: url(/images/star.svg);
+    content: "";
+}
+@media only screen and (min-width:599px){
+    .hero__item:nth-child(2n+1){
+        max-width: 640px;
+        width: 100% ;
+    }
+    .hero__item:nth-child(2n){
+        max-width: 640px;
+        width: 100% ;
+    }
+}
+
+@media only screen and (min-width:920px){
+    .hero__aboutwrapper{
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+    }
+    .hero__aboutbox{
+        margin-right: 56px;
+    }
+    
+
+}

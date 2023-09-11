@@ -1,0 +1,216 @@
+.cards{
+    margin-bottom: 100px;
+}
+
+.cards__box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cards__title{
+    color: #90A3BF;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%; 
+    letter-spacing: -0.28px;
+}
+.cards__link{
+    color: #3563E9;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+.cards__list{
+    display: flex;
+    @include list-style;
+}
+
+.cards__item{
+    width: 298px    ;
+    margin-right: 20px;
+    margin-bottom: 32px;
+    padding: 16px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.cards__topbox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards__itemtitle{
+    margin-bottom: 4px;
+    padding: 0;
+    color: #1A202C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    letter-spacing: -0.32px;
+}
+
+.cards__likebox{
+    width: 20px;
+    height: 20px;
+    background-image: url(/images/emptylike.png);
+    background-size: 100% 100%;
+}
+
+.cards__likebox:hover{
+    background-image: url(/images/redlike.png);
+}
+
+.cards__itemtext{
+    margin:0 0 32px;
+    padding: 0;
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.cards__itemimg{
+    display: block;
+    margin: 0 auto 44px;
+}
+
+.cards__bottombox{
+    display: flex;
+    align-items: center;justify-content: space-between;
+}
+
+.cards__oiltext{
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+.cards__oiltext::before{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(/images/gas-station.svg);
+    background-size: 100% 100%;
+    content: "";
+}
+
+.cards__bottomlist{
+    display: flex;
+    @include list-style;
+    flex-wrap: wrap;
+}
+.cards__bottomtext{
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.cards__bottomtext::before{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(/images/control.svg);
+    background-size: 100% 100%;
+    content: "";
+}
+
+.cards__righttext{
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.24px;
+}
+
+.cards__righttext::before{
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background-image: url(/images/profile-2user.svg);
+    background-size: 100% 100%;
+    content: "";
+}
+
+.cards__pricebox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.cards__pricetext{
+    margin: 0;
+    color: #90A3BF;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.12px;
+}
+
+.cards__halfprice{
+    color: #1A202C;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.16px;
+}
+
+.cards__itemlink{
+    @include link-style
+}
+
+.cards__centerbox{
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+
+.cards__itemtext--mb {
+    margin-bottom: 12px;
+}
+.cards__itemimg--mb {
+    margin-top: 12px;
+    margin-bottom: 32px;
+}
+
+.cards__bottomlist{
+    @include list-style;
+}
+.cards__hiddenlist{
+    display: none;
+}
+.cards__bottomlink{
+    display: block;
+    @include link-style;
+    margin: 0 auto;
+}
+
+.cards__linkbox{
+    display: flex;
+}
+
+
+@media only screen and (min-width:1024px){
+    .cards__hiddenlist{
+        display: flex;
+        @include list-style;
+        flex-wrap: wrap;
+    }
+}
